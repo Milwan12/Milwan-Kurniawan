@@ -114,7 +114,7 @@ let swiper = new Swiper('.portfolio__container', {
 
 /*==================== Typed JS ====================*/
 let typed = new Typed(".multiple-text", { 
-    strings: ["Software Engineer.", "Full-stack Developer."],    
+    strings: ["Web Developer.", "Mobile Developer."],    
     smartBackspace: true, 
     showCursor: true,
     cursorChar: '|',
