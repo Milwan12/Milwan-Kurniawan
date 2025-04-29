@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="assets/js/analytics.js"></script>
+ <script src="assets/js/gtag.js"></script>
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--==================== Bootstrap ====================-->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Portfolio Website</title>
+</head>
+
+<audio id="musik" autoplay loop>
+    <source src="#" type="audio/mpeg">
+  </audio>
+  <script>
+    window.addEventListener('load', function() {
+      var musik = document.getElementById('musik');
+      musik.play().catch(function(error) {
+        console.log('Autoplay diblokir, butuh interaksi user.');
+      });
+    });
+  </script>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Milwan.</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> Tentang Saya
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Kualifikasi
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Foto Kenangan
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Hubungi Saya
+                        </a>
+                    </li>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </ul>
+            </div>
+
+            <div class="nav__btns">
+
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <div class="uil uil-apps"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/muhammad-milwan-kurniawan-5a5b6a32b/?originalSubdomain=id" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/kurni_awan1207/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+
+                        <a href="https://github.com/Milwan12/Milwan-Kurniawan" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+
+                                <image class="home__blob-img" x="12" y="18" href="assets/img/prefil-hd.png" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="home__data">
+                        <h2 class="home__title">Muhammad Milwan Kurniawan</h2>
+                        <h3 class="home__subtitle"><span class="multiple-text"></span></h3>
+                        <p class="home__description">
+
+                        </p>
+                        <a href="mailto:milwanproduction@gmail.com" class="button button--flex">
+                            Hubungi Saya <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-">Scroll Kebawah</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">Tentang Saya</h2>
+            <span class="section__subtitle">Perkenalan saya</span>
+
+            <div class="about__container container grid">
+                <img src="assets/img/portal-milwan.jpg" alt="Foto Tentang Saya" class="about__img" />
+                <div class="about__data">
+                    <p class="about__description">
+                     Saya adalah mahasiswa Hukum Tata Negara di Universitas Islam Negeri Prof. K.H. Saifuddin Zuhri Purwokerto, yang berfokus pada penguatan sistem ketatanegaraan demokratis dan kebijakan publik berpihak pada rakyat. Berdasarkan prinsip <b><em> rule of law, equality before the law, dan supremasi konstitusi,</b></em> saya melihat hukum sebagai alat perjuangan sosial dan penguatan demokrasi. Saya berkomitmen untuk menggunakan hukum sebagai sarana pembebasan sosial dan keadilan substantif.
+                    </p>
+                    <blockquote>
+                      <em>[Fiat justitia ruat caelum]</em><br>
+                      "Sekalipun langit akan runtuh, Meskipun dunia akan musnah keadilan harus tetap ditegakkan."
+                      <span class="quote-author">— Lucius Calpurnius Piso Caesoninus</span>
+                    </blockquote>
+                    <div class="shout" style="color: red;">Hidup MAHASISWA!</div>
+                  </div>         
+
+                                <div class="about__buttons">
+                    <a download="CV MILWAN.pdf" href="CV MILWAN.pdf" class="button button--flex">
+                        Unduh CV<i class="uil uil-download-alt button__icon"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+  <!--==================== QUALIFICATION ====================-->
+<section class="qualification section" data-target="#kualifikasi">
+    <h2 class="section__title">Kualifikasi</h2>
+    <span class="section__subtitle"></span>
+
+    <div class="qualification__container container">
+        <div class="qualification__tabs">
+            <div class="qualification__button button--flex qualification__active" data-target="#education">
+                <i class="uil uil-graduation-cap qualification__icon"></i>
+                Pendidikan
+            </div>
+            <div class="qualification__button button--flex" data-target="#work">
+                <i class="uil uil-briefcase-alt qualification__icon"></i>
+                Aktivitas Sekolah
+            </div>
+        </div>
+
+        <div class="qualification__section">
+            <!--==================== EDUCATION ====================-->
+            <div class="qualification__content qualification__active" data-content id="education">
+                <!-- Entri 1 -->
+                <div class="qualification__data">
+                    <div>
+                        <h3 class="qualification__title">SD NEGERI KALIWADAS 01</h3>
+                        <div class="qualification__calender">
+                            <i class="uil uil-calender-alt"></i>
+                            2013 - 2019
+                        </div>
+                    </div>
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+                </div>
+
+                <!-- Entri 2 -->
+                <div class="qualification__data">
+                    <div></div>
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+                    <div>
+                        <h3 class="qualification__title">SMP NEGERI 02 Bumiayu</h3>
+                        <div class="qualification__calender">
+                            <i class="uil uil-calender-alt"></i>
+                            2019 - 2022
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entri 3 -->
+                <div class="qualification__data">
+                    <div>
+                        <h3 class="qualification__title">MAN 2 BREBES</h3>
+                        <span class="qualification__subtitle">IPS Reguler</span>
+                        <div class="qualification__calender">
+                            <i class="uil uil-calender-alt"></i>
+                            2022 - 2025
+                        </div>
+                    </div>
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+                </div>
+
+                <!-- Entri 4 -->
+                <div class="qualification__data">
+                    <div></div>
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <!-- Tidak perlu qualification__line jika entri terakhir -->
+                    </div>
+                    <div>
+                        <h3 class="qualification__title">UIN Prof. K.H. Saifuddin Zuhri</h3>
+                        <span class="qualification__subtitle">[S-1] HUKUM TATA NEGARA (SIYASAH)</span>
+                        <div class="qualification__calender">
+                            <i class="uil uil-calender-alt"></i>
+                            2025 - Sekarang
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--==================== AKTIVITAS SEKOLAH ====================-->
+            <div class="qualification__content" data-content id="work">
+                <!-- Entri 1 -->
+                <div class="qualification__data">
+                    <div>
+                        <h3 class="qualification__title">SMP NEGERI 02 BUMIAYU</h3>
+                        <span class="qualification__subtitle">OSIS</span>
+                        <span class="qualification__subtitle">[Wakil Ketua]</span>
+                        <div class="qualification__calender">
+                            <i class="uil uil-calender-alt"></i>
+                            Mei 2020 - September 2021
+                        </div>
+                    </div>
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+                </div>
+
+                <!-- Entri 2 -->
+                <div class="qualification__data">
+                    <div></div>
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <!-- Tidak perlu qualification__line jika entri terakhir -->
+                    </div>
+                    <div>
+                        <h3 class="qualification__title">SMP NEGERI 02 BUMIAYU</h3>
+                        <span class="qualification__subtitle">Hadroh</span>
+                        <span class="qualification__subtitle">[All Role]</span>
+                        <div class="qualification__calender">
+                            <i class="uil uil-calender-alt"></i>
+                            Januari 2021 - s/d selesai
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--==================== PORTFOLIO ====================-->
+<section class="portfolio section" id="portfolio">
+    <h2 class="section__title">FOTO KENANGAN</h2>
+    <span class="section__subtitle">Berikut Adalah Foto Kenangan Dari SD-SMA</span>
+
+    <div class="portfolio__container container swiper-container">
+        <div class="swiper-wrapper">
+
+            <!-- Foto 1 -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/sd (1).jpg" alt="" class="portfolio__img">
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">Foto Bersama Kelas 5</h3>
+                    <p class="portfolio__description">
+                        Foto ini diambil pada saat sebelum melakukan Ujian Nasional bersama Wali Kelas Ibu H. Khuzaimah S.pd serta guru-guru lainnya.
+                    </p>
+                    <div class="like-section">
+                        <a href="#" class="button button--flex button--small portfolio__button like-button" data-id="foto1">
+                            Like <i class="uil uil-thumbs-up button__icon"></i>
+                        </a>
+                        <span class="like-count" id="like-count-foto1">0 Likes</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 2 -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/sd (4).jpg" alt="" class="portfolio__img">
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">Foto Bersama Kelas 9D</h3>
+                    <p class="portfolio__description">
+                        Foto ini diambil pada saat sebelum wisuda kelas 9D SMP Negeri 2 Bumiayu, dengan wali kelas Bapak Agus Takrib S.pd.
+                    </p>
+                    <div class="like-section">
+                        <a href="#" class="button button--flex button--small portfolio__button like-button" data-id="foto2">
+                            Like <i class="uil uil-thumbs-up button__icon"></i>
+                        </a>
+                        <span class="like-count" id="like-count-foto2">0 Likes</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- (lanjut foto 3, 4, 5 sama pola ini ya) -->
+
+        </div>
+
+        <!-- Navigasi -->
+        <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- Like Script -->
+<script>
+// Fungsi cek apakah bisa Like
+function canLike(id) {
+    const lastLiked = localStorage.getItem('like_time_' + id);
+    if (!lastLiked) return true;
+    const now = new Date().getTime();
+    return now - parseInt(lastLiked) > 3600000; // 1 jam
+}
+
+// Update jumlah like
+function updateLikeCount(id) {
+    const count = localStorage.getItem('like_count_' + id) || 0;
+    document.getElementById('like-count-' + id).textContent = `${count} Likes`;
+}
+
+// Update tombol
+function updateButtonStatus(button, id) {
+    if (!canLike(id)) {
+        button.classList.add('disabled');
+        button.style.pointerEvents = 'none';
+        button.style.opacity = '0.6';
+    } else {
+        button.classList.remove('disabled');
+        button.style.pointerEvents = 'auto';
+        button.style.opacity = '1';
+    }
+}
+
+// Handle klik Like
+function handleLikeClick(event) {
+    event.preventDefault();
+    const button = event.currentTarget;
+    const id = button.getAttribute('data-id');
+
+    if (canLike(id)) {
+        let count = parseInt(localStorage.getItem('like_count_' + id) || '0');
+        count++;
+        localStorage.setItem('like_count_' + id, count);
+        localStorage.setItem('like_time_' + id, new Date().getTime());
+
+        updateLikeCount(id);
+        updateButtonStatus(button, id);
+
+        Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Terima kasih sudah Like!",
+            showConfirmButton: false,
+            timer: 1500
+        });
+    } else {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Oops...',
+            text: 'Sudah Like, tunggu 1 jam lagi!',
+            timer: 2000
+        });
+    }
+}
+
+// Inisialisasi
+document.querySelectorAll('.like-button').forEach(button => {
+    const id = button.getAttribute('data-id');
+    updateLikeCount(id);
+    updateButtonStatus(button, id);
+    button.addEventListener('click', handleLikeClick);
+});
+
+// Cek tombol Like tiap 1 menit
+setInterval(() => {
+    document.querySelectorAll('.like-button').forEach(button => {
+        const id = button.getAttribute('data-id');
+        updateButtonStatus(button, id);
+    });
+}, 60000);
+</script>
+
+
+     <!--==================== CONTACT ME ====================-->
+     <section class="contact section" id="contact">
+        <h2 class="section__title" style="font-size: 2rem; font-weight: bold; text-align: center; color: #333;">Hubungi Saya</h2> 
+        <div class="contact__container container grid">
+            <form action="" class="contact__form grid" id="contact-form">
+                <div class="contact__inputs grid">
+                    <div class="contact__content">
+                        <label for="contact-name" class="contact__label">Nama</label>
+                        <input type="text" class="contact__input" id="contact-name" name="user_name" required>
+                    </div>
+                    <div class="contact__content">
+                        <label for="contact-email" class="contact__label">Email</label>
+                        <input type="email" class="contact__input" id="contact-email" name="user_email" required>
+                    </div>
+                </div>
+    
+                <div class="contact__content">
+                    <label for="user-message" class="contact__label">Pesan</label>
+                    <textarea name="user_message" id="user-message" cols="0" rows="7" class="contact__input" required></textarea>
+                </div>
+    
+                <p class="contact__message" id="contact-message"></p>
+    
+                <div>
+                    <button type="submit" name="submit" class="button contact__button button--flex">
+                        Kirim Pesan
+                        <i class="uil uil-message button__icon"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Script wajib -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <div class="footer__title">Portfolio.</div>
+                    <span class="footer__subtitle"></span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#education" class="footer__link">Kualifikasi</a>
+                    </li>
+                    <li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Foto Kenangan</a>
+                    </li>
+                    <li>
+                        <!-- <a href="#contact" class="footer__link">Contac</a> -->
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/muhammad-milwan-kurniawan-5a5b6a32b/" class="footer__social" target="_blank">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://instagram.com/kurni_awan1207?igshid=MTlmM3ZtNzF1Y252eg==" class="footer__social" target="_blank">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://github.com/Milwan12/Milwan-Kurniawan" class="footer__social" target="_blank">
+                        <i class="uil uil-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Muhammad Milwan Kurniawan</p>
+        </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== Bootstrap ====================-->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script> -->
+
+    <!--==================== Scroll Reveal ====================-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--==================== TYPED JS ====================-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== EMAIL JS ====================-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+        
+</body>
+
+</html>
