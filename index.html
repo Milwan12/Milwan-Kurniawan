@@ -22,7 +22,7 @@
 </head>
 
 <audio id="musik" autoplay loop>
-    <source src="mars.mp3" type="audio/mpeg">
+    <source src="#" type="audio/mpeg">
   </audio>
   <script>
     window.addEventListener('load', function() {
@@ -97,9 +97,46 @@
                             <i class="uil uil-instagram"></i>
                         </a>
 
-                        <a href="https://github.com/Milwan12/Milwan-Kurniawan" target="_blank" class="home__social-icon">
-                            <i class="uil uil-github-alt"></i>
+                                            <!-- Tombol WhatsApp -->
+                        <a id="wa-link" href="#" target="_blank" class="home__social-icon">
+                            <i class="uil uil-whatsapp-alt"></i>
                         </a>
+
+                        <!-- Script JavaScript -->
+                        <script>
+                        // Fungsi untuk mendapatkan jam WIB
+                        function getWIBHour() {
+                            const nowUTC = new Date();
+                            const wibOffset = 7 * 60; // WIB = UTC+7 dalam menit
+                            const localOffset = nowUTC.getTimezoneOffset(); // perbedaan zona waktu lokal dengan UTC (dalam menit)
+                            const totalOffset = wibOffset + localOffset;
+                            nowUTC.setMinutes(nowUTC.getMinutes() + totalOffset);
+                            return nowUTC.getHours();
+                        }
+
+                        // Fungsi untuk menentukan sapaan sesuai waktu
+                        function getGreeting() {
+                            const hour = getWIBHour();
+                            if (hour >= 5 && hour < 11) {
+                            return "Halo, selamat pagi";
+                            } else if (hour >= 11 && hour < 15) {
+                            return "Halo, selamat siang";
+                            } else if (hour >= 15 && hour < 18) {
+                            return "Halo, selamat sore";
+                            } else {
+                            return "Halo, selamat malam";
+                            }
+                        }
+
+                        // Nomor WhatsApp & set URL
+                        const phone = "6281391644785"; // gunakan format internasional tanpa tanda +
+                        const greeting = getGreeting();
+                        const encodedMessage = encodeURIComponent(greeting);
+                        const waUrl = `https://wa.me/${phone}?text=${encodedMessage}`;
+
+                        // Set href ke tombol WhatsApp
+                        document.getElementById("wa-link").href = waUrl;
+                        </script>
                     </div>
 
                     <div class="home__img">
@@ -522,9 +559,39 @@ setInterval(() => {
                     <a href="https://instagram.com/kurni_awan1207?igshid=MTlmM3ZtNzF1Y252eg==" class="footer__social" target="_blank">
                         <i class="uil uil-instagram"></i>
                     </a>
-                    <a href="https://github.com/Milwan12/Milwan-Kurniawan" class="footer__social" target="_blank">
-                        <i class="uil uil-github"></i>
+                      <a id="wa-footer" href="#" class="footer__social" target="_blank">
+                        <i class="uil uil-whatsapp-alt"></i>
                     </a>
+                        <script>
+                        function getWIBHour() {
+                            const nowUTC = new Date();
+                            const wibOffset = 7 * 60;
+                            const localOffset = nowUTC.getTimezoneOffset();
+                            const totalOffset = wibOffset + localOffset;
+                            nowUTC.setMinutes(nowUTC.getMinutes() + totalOffset);
+                            return nowUTC.getHours();
+                        }
+
+                        function getGreeting() {
+                            const hour = getWIBHour();
+                            if (hour >= 5 && hour < 11) {
+                            return "Halo, selamat pagi";
+                            } else if (hour >= 11 && hour < 15) {
+                            return "Halo, selamat siang";
+                            } else if (hour >= 15 && hour < 18) {
+                            return "Halo, selamat sore";
+                            } else {
+                            return "Halo, selamat malam";
+                            }
+                        }
+
+                        const phoneFooter = "6281391644785";
+                        const greetingFooter = getGreeting();
+                        const encodedMessageFooter = encodeURIComponent(greetingFooter);
+                        const waUrlFooter = `https://wa.me/${phoneFooter}?text=${encodedMessageFooter}`;
+                        document.getElementById("wa-footer").href = waUrlFooter;
+                        </script>
+
                 </div>
             </div>
 
